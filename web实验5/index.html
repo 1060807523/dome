@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: Arial;
+			}
+			
+			body * {
+				margin: 0 auto;
+			}
+			
+			header {
+				/*vertical-align: middle;*/
+				position: relative;
+				width: 100%;
+				height: 43vh;
+				background-image: url(img/header_bg.jpg);
+				background-repeat: no-repeat;
+				background-size: 100% 43vh;
+			}
+			
+			nav {
+				position: absolute;
+				background-color: rgb(255, 255, 255, 0.5);
+				list-style: none;
+				bottom: 0;
+				width: 100%;
+			}
+			
+			nav ul li {
+				line-height: 2em;
+				display: inline-block;
+				color: orange;
+				border-right: 1.5px solid rgb(255, 255, 255, 0.5);
+				padding-left: 1vw;
+				padding-right: 1vw;
+			}
+			
+			header h1 {
+				/*text-align: left;*/
+				display: inline;
+				text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.8);
+				color: royalblue;
+				font-size: 5vw;
+				font-family: Times New Roman;
+				padding-left: 3em;
+				line-height: 100%;
+				line-height: 43vh;
+			}
+			
+			aside {
+				padding-top: 2vh;
+				float: left;
+				width: 20%;
+			}
+			
+			aside input {
+				width: 80%;
+				height: 4vh;
+				display: block;
+				border-radius: 3px;
+				border: 1.5px solid darkgray;
+				outline: none;
+				margin-top: 2vh;
+				padding-left: 0.2em;
+			}
+			
+			aside input:focus {
+				border: 1.5px solid coral;
+			}
+			
+			aside h3 {
+				text-align: center;
+				font-family: Arial;
+			}
+			
+			aside button {
+				margin-top: ;
+				display: block;
+				margin: 2vh auto;
+				background-color: dodgerblue;
+				width: 60%;
+				height: 5vh;
+				border-radius: 10px;
+				outline: none;
+				border-width: 0px;
+				cursor: pointer;
+				color: white;
+			}
+			
+			article {
+				float: left;
+				width: 60%;
+			}
+			
+			article h2 {
+				line-height: 3em;
+			}
+			
+			article .panel {
+				float: left;
+				width: 30%;
+				padding-right: 1vw;
+			}
+			
+			article .panel img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			article .panel-body {
+				height: 30vh;
+			}
+			article .table{
+				clear: both;
+			}
+			
+			article table{
+				width: 100%;
+				 border-collapse:collapse
+			}
+			article table thead{
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="">
+			<header>
+				<h1>
+					San Francisco
+				</h1>
+				<nav>
+					<ul>
+						<li>home</li>
+						<li>Cable Cars</li>
+						<li>Chinatown</li>
+						<li>isHermans Wharf</li>
+						<li>Contact Us</li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<aside>
+					<form>
+						<h3>Login</h3>
+						<input type="text" placeholder="User name" />
+						<input type="text" placeholder="password" />
+						<button>Sign in</button>
+					</form>
+				</aside>
+				<article>
+					<hgroup>
+						<h2>
+							Your Tour Guide
+						</h2>
+						<h3>
+							The City by the Bay
+						</h3>
+					</hgroup>
+					<div class="panel">
+						<div class="panel-body">
+							<img src="img/market-street-car.jpg" />
+						</div>
+						<div class="panel-text">
+							San Francisco is located on the West Coast of the United States at the tip of the San Francisco Peninsula and includes significant stretches of the Pacific Ocean and San Francisco Bay within its boundaries.
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-body">
+							<img src="img/chinatown.jpg" />
+						</div>
+						<div class="panel-text">
+							Today, San Francisco is one of the top tourist destinations in the world, ranking 33rd out of the 100 most visited cities worldwide, and is renowned for its chilly summer fog, steep rolling hills, eclectic mix of architecture, and its famous landmarks,
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-body">
+							<img src="img/cablecar-closeup.jpg" />
+						</div>
+						<div class="panel-text">
+							including the Golden Gate Bridge, cable cars, and Chinatown. The city is also a principal banking and finance center, and the home to more than 30 international financial institutions,
+						</div>
+					</div>
+					<div class="table">
+						<table border="1">
+							<thead>
+								<th>Demographic profile</th>
+								<th>2010 </th>
+								<th>2000 </th>
+								<th>1990 </th>
+								<th>1970 </th>
+								<th>1940</th>
+							</thead>
+							<tbody>
+								<td>White </td>
+								<td>48.5% </td>
+								<td>49.7% </td>
+								<td>53.6% </td>
+								<td>71.4% </td>
+								<td>95.0%</td>
+							</tbody>
+						</table>
+					</div>
+				</article>
+			</main>
+		</div>
+	</body>
+
+</html>
