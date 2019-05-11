@@ -36,7 +36,7 @@
 			nav ul li {
 				line-height: 2em;
 				display: inline-block;
-				color: orange;
+				color: brown;
 				border-right: 1.5px solid rgb(255, 255, 255, 0.5);
 				padding-left: 1vw;
 				padding-right: 1vw;
@@ -105,10 +105,13 @@
 			
 			article .panel {
 				float: left;
-				width: 30%;
-				padding-right: 1vw;
+				width: 31%;
+				/*padding-right: 1vw;*/
+				margin-right: 1vw;
 			}
-			
+			.panel :nth-last-child(1){
+				margin-right: 0;
+			}
 			article .panel img {
 				width: 100%;
 				height: 100%;
@@ -125,8 +128,28 @@
 				width: 100%;
 				 border-collapse:collapse
 			}
+			
+			article tbody tr:nth-last-of-type(odd){
+				background-color: lightblue;
+			}
 			article table thead{
-				
+				color: white;
+				background-color: rgb(96, 152, 195);
+			}
+			.left_area{
+				float: left;
+				width: 18.99%;
+				height: 100vh;
+				background-color: rgb(96, 152, 195);
+				margin-left: 1%;
+			}
+			footer{
+				color: white;
+				clear: both;
+				width: 100%;
+				height: 17vh;
+				background-color: orange;
+				line-height: 5em;
 			}
 		</style>
 	</head>
@@ -192,24 +215,93 @@
 					<div class="table">
 						<table border="1">
 							<thead>
-								<th>Demographic profile</th>
-								<th>2010 </th>
-								<th>2000 </th>
-								<th>1990 </th>
-								<th>1970 </th>
-								<th>1940</th>
+								<tr>
+									<th>Demographic profile</th>
+									<th>2010 </th>
+									<th>2000 </th>
+									<th>1990 </th>
+									<th>1970 </th>
+									<th>1940</th>
+								</tr>
 							</thead>
 							<tbody>
-								<td>White </td>
-								<td>48.5% </td>
-								<td>49.7% </td>
-								<td>53.6% </td>
-								<td>71.4% </td>
-								<td>95.0%</td>
+								<tr>
+									<td>Non-Hispanic White </td>
+									<td>48.5% </td>
+									<td>49.7% </td>
+									<td>53.6% </td>
+									<td>71.4% </td>
+									<td>95.0%</td>
+								</tr>
+								<tr>
+									<td>Asian  </td>
+									<td>48.5% </td>
+									<td>49.7% </td>
+									<td>53.6% </td>
+									<td>71.4% </td>
+									<td>95.0%</td>
+								</tr>
+								<tr>
+									<td>Black or African American </td>
+									<td>48.5% </td>
+									<td>49.7% </td>
+									<td>53.6% </td>
+									<td>71.4% </td>
+									<td>95.0%</td>
+								</tr>
+								<tr>
+									<td>American Indian and Alaska Native </td>
+									<td>48.5% </td>
+									<td>49.7% </td>
+									<td>53.6% </td>
+									<td>71.4% </td>
+									<td>95.0%</td>
+								</tr>
+								<tr>
+									<td>Native Hawaiian and Other Pacific Islander </td>
+									<td>41.9%</td>
+									<td>43.6% </td>
+									<td>46.6% </td>
+									<td>60.4%<sup><a>[117]</a></sup> </td>
+									<td>92.5%</td>
+								</tr>
+								<tr>
+									<td>Some other race</td>
+									<td>33.3%</td>
+									<td>30.8%  </td>
+									<td>46.6% </td>
+									<td>29.1% </td>
+									<td>95.0%</td>
+								</tr>
+								<tr>
+									<td>Two or more races</td>
+									<td>48.5% </td>
+									<td>49.7% </td>
+									<td>53.6% </td>
+									<td>71.4% </td>
+									<td>95.0%</td>
+								</tr>
+								<tr>
+									<td>Hispanic or Latino (of any race) 	</td>
+									<td>15.1% </td>
+									<td>14.1% </td>
+									<td>53.6% </td>
+									<td>11.6%<sup><a>[117]</a></sup> </td>
+									<td>2.5%</td>
+								</tr>
 							</tbody>
 						</table>
 					</div>
+					
 				</article>
+				<aside class="left_area">
+					<div style="color: white;line-height: 2em;padding: 70% 10%;">
+						<p style="text-align: center;">San Francisco is located on the West Coast of the United States at the tip of the San and the home to more than 30 international financial institutions</p>
+					</div>
+				</aside>
+				<footer>
+					@San Francisco Tour
+				</footer>
 			</main>
 		</div>
 	</body>
